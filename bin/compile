@@ -73,10 +73,10 @@ mkdir -p $BUILD_DIR/.profile.d
 
 cat > $BUILD_DIR/.profile.d/imagemagick.sh <<EOF
 export PATH="$HOME/bin:$PATH"
-export LD_LIBRARY_PATH="$lib_path:$LD_LIBRARY_PATH"
-export LD_RUN_PATH="$lib_path:$LD_RUN_PATH"
-export IMAGEMAGICK_ROOT="$BUILD_DIR/vendor/imagemagick"
-export PKG_CONFIG_PATH="$lib_path/pkgconfig/:$PKG_CONFIG_PATH"
+export MAGICK_HOME="$HOME/vendor/imagemagick"
+export LD_LIBRARY_PATH="$MAGICK_HOME/lib:$LD_LIBRARY_PATH"
+export LD_RUN_PATH="$MAGICK_HOME/lib:$LD_RUN_PATH"
+export PKG_CONFIG_PATH="$MAGICK_HOME/lib/pkgconfig/:$PKG_CONFIG_PATH"
 EOF
 
 export PKG_CONFIG_PATH="$lib_path/pkgconfig/:$PKG_CONFIG_PATH"

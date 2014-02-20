@@ -4,8 +4,5 @@
 cat <<EOF
 ---
 config_vars:
-  PATH: /app/vendor/imagemagick/lib:$PATH
-  LD_LIBRARY_PATH: /app/vendor/imagemagick/lib
-  MAGICK_HOME: /app/vendor/imagemagick/lib
-  LANG: en_US.UTF-8
+  PATH: $HOME/bin:/usr/local/bin:/usr/bin:/bin
 EOF
