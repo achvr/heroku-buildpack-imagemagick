@@ -71,7 +71,7 @@ echo "Installation completed" | indent
 echo "Building runtime environment for imagemagick" | arrow
 mkdir -p $BUILD_DIR/.profile.d
 
-cat > $HOME/.profile.d/imagemagick.sh <<EOF
+cat > $BUILD_DIR/.profile.d/imagemagick.sh <<EOF
 export PATH="$HOME/bin:$PATH"
 export LD_LIBRARY_PATH="$lib_path:$LD_LIBRARY_PATH"
 export LD_RUN_PATH="$lib_path:$LD_RUN_PATH"
